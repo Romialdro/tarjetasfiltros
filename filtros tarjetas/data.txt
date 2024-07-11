@@ -1,0 +1,82 @@
+1. Lógica del Algoritmo
+Objetivo: Filtrar y mostrar productos en función de los criterios seleccionados: nombre, categoría, y rango de precios.
+
+Datos de Entrada:
+
+Productos en formato JSON.
+Valores de los filtros introducidos por el usuario.
+Pasos del Algoritmo:
+
+Cargar Productos:
+
+Inicialmente, se cargan los productos desde un archivo JSON (o se inicializan en el código) y se muestran en la página.
+Capturar Valores de los Filtros:
+
+Obtener el texto del campo de filtro para el nombre del producto.
+Obtener el texto del campo de filtro para la categoría del producto.
+Obtener el valor del campo de filtro para el precio mínimo.
+Obtener el valor del campo de filtro para el precio máximo.
+--------------------------------------------------------------------------------------------------------------
+Filtrar Productos:
+
+Por Nombre: Verificar si el nombre del producto contiene el texto ingresado en el filtro de nombre.
+Por Categoría: Verificar si la categoría del producto contiene el texto ingresado en el filtro de categoría.
+Por Precio: Verificar si el precio del producto está dentro del rango especificado (mayor o igual que el precio mínimo y menor o igual que el precio máximo).
+Mostrar Productos Filtrados:
+
+Limpiar la lista de productos mostrados.
+Mostrar solo los productos que cumplen con los criterios de filtrado.
+Limpiar Filtros:
+
+Al hacer clic en el botón de "Limpiar Filtros", restablecer los campos de entrada de los filtros y volver a mostrar todos los productos.
+2. Diagrama de Flujo
+El diagrama de flujo es una representación visual del proceso. Aquí está el flujo explicado de manera simplificada:
+
+plaintext
+Copiar código
+          [Inicio]
+              |
+              v
+    [Cargar Productos]  <-- (Carga inicial de datos)
+              |
+              v
+[Obtener Valores de Filtros]
+  (Nombre, Categoría, Precio Mínimo, Precio Máximo)
+              |
+              v
+[Filtrar Productos]
+  - Por Nombre
+  - Por Categoría
+  - Por Precio
+              |
+              v
+[Mostrar Productos Filtrados]
+              |
+              v
+[Limpiar Filtros] <-- (Si el usuario hace clic en "Limpiar Filtros")
+  - Restablecer campos
+  - Mostrar todos los productos
+              |
+              v
+          [Fin]
+Explicación Paso a Paso
+Inicio:
+
+La aplicación comienza cuando el documento se carga (DOMContentLoaded).
+Cargar Productos:
+
+Los productos se cargan desde el JSON o se inicializan directamente en el código.
+Obtener Valores de Filtros:
+
+Los valores introducidos por el usuario en los filtros de nombre, categoría y precios se capturan.
+Filtrar Productos:
+
+Por Nombre: Filtrar productos cuyo nombre contenga el texto ingresado.
+Por Categoría: Filtrar productos cuya categoría contenga el texto ingresado.
+Por Precio: Filtrar productos cuyo precio esté dentro del rango especificado.
+Mostrar Productos Filtrados:
+
+Los productos que cumplen con los criterios se muestran en la página.
+Limpiar Filtros:
+
+Si el usuario hace clic en el botón de "Limpiar Filtros", se restablecen los campos de entrada de los filtros y se vuelven a mostrar todos los productos.
